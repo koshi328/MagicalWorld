@@ -1,0 +1,9 @@
+Resources/cModels/Human.cmo
+Resources/cModels/field.cmo
+Resources/cModels/kentauros.cmo
+Resources/cModels/sky.cmo
+Resources/cModels/sphere.cmo
+Resources/cModels/Circle.cmo
+Resources/cModels/Item.cmo
+Resources/cModels/Square.cmo
+Resources/cModels/Bomb.cmo

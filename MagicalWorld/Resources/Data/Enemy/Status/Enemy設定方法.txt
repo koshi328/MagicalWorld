@@ -1,0 +1,16 @@
+設定可能項目
+体力(HP)
+魔力(MP)
+攻撃力(ATTACK)
+防御力(DEFENSE)
+魔法攻撃力(MAGICATTACK)
+魔法防御力(MAGICDEFENSE)
+モデル番号(MODEL)
+スキル番号(SKILL)
+
+設定項目の（）内をキーワードとする
+
+キーワード,数値 
+例) ATTACK,150
+
+この書式で設定する

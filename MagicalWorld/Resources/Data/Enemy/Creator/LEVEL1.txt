@@ -1,0 +1,3 @@
+MAX,3
+TIME,500
+ENEMY,Resources/Data/Enemy/Status/Goblin.txt

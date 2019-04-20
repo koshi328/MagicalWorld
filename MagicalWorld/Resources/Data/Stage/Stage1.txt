@@ -1,0 +1,5 @@
+FIELD,1,Resources/cModels/field.MDL,0,0,0,0,0,0,1,1,1
+ENEMYCREATOR,Resources/Data/Enemy/Creator/LEVEL1.txt,-200,50,-200
+ENEMYCREATOR,Resources/Data/Enemy/Creator/LEVEL1.txt,-200,50,200
+ENEMYCREATOR,Resources/Data/Enemy/Creator/LEVEL1.txt,200,50,-200
+ENEMYCREATOR,Resources/Data/Enemy/Creator/LEVEL1.txt,200,50,200

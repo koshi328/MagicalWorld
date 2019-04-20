@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ImaseLib">
+      <UniqueIdentifier>{e362d905-15b5-4317-91e0-94bf38276c63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Font">
+      <UniqueIdentifier>{2e505f80-a828-4c6b-882e-2feefc5fae20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="property">
+      <UniqueIdentifier>{9bcbddd1-556e-41f2-af1a-55b678cfe964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameBase">
+      <UniqueIdentifier>{538ddeb0-8146-4590-96ab-3d2f2df041c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{c7b9d4fb-5aec-41b9-a392-866b67c82c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{815620cb-01c4-40d0-b790-ddeb9bcdad31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{b1b8cd1a-da94-4997-83b3-6415605a15b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{06c28732-f6ca-4f6b-be7e-60aca1c49690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{c5a4ba9a-82b8-4b56-8c13-4bb61f9d4fd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{d1c5df55-98bc-427f-aa6f-53416aa5ba01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\Skill">
+      <UniqueIdentifier>{8430aedd-ef36-4816-ad46-1634dcb491d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{1f8690d9-6218-41a9-8570-ebb5cc7f42ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particle">
+      <UniqueIdentifier>{513df272-5ca2-42f4-b1fa-1ecd1cb1b909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{920ce196-411c-4e76-bd24-16a34fd01704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlayerSkill">
+      <UniqueIdentifier>{fbecabcc-9ede-4366-b571-6ba840facdf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{d79e7a9a-df4d-462f-8007-074418be184a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RangeMap">
+      <UniqueIdentifier>{9c0f6d7d-8203-4fa9-b12c-0574751a6bb4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImaseLib\FPSTimer.cpp">
+      <Filter>ImaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBase\WindowBase.cpp">
+      <Filter>GameBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBase\GameBase.cpp">
+      <Filter>GameBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBase\Graphics.cpp">
+      <Filter>GameBase</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Mouse.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\MeshManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBase\Game.cpp">
+      <Filter>GameBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Camera\Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Camera\CameraManager.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Camera\CameraMode.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Scene\SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Scene\Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Scene\GameScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\Actor.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\GameObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Collision\Collision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Collision\Collision2D.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Collision\Split4Tree.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Collision\Terrain.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Collision\TerrainData.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Key.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\ObjectManager.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\Player.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Camera\TrackingMode.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Collision\CollisionManager.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\Enemy.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\AIState.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\Follow.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\UseSkill.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\Waiting.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\EnemySkills\Cleave.cpp">
+      <Filter>AI\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\EnemySkills\EnemySkill.cpp">
+      <Filter>AI\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\EnemySkills\HammerOfAnger.cpp">
+      <Filter>AI\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\UI\Canvas.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\UI\GUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\UI\StatusGauge.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle\ParticleManager.cpp">
+      <Filter>Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\Explosion.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\Bomb.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\CircleEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\EnemySkills\BombSetting.cpp">
+      <Filter>AI\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\PlayerSkill\Swing.cpp">
+      <Filter>PlayerSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\PlayerSkill\Heel.cpp">
+      <Filter>PlayerSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\PlayerSkill\Skill.cpp">
+      <Filter>PlayerSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\PlayerSkill\SkillController.cpp">
+      <Filter>PlayerSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\UI\SkillWindow.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\MessageUI.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\Afterimage.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\HeelEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Billboard.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\ADX2Le.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Scene\TitleScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Scene\BlackFade.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\Stage.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\EnemyCreator.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\EnemySkills\Rush.cpp">
+      <Filter>AI\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\AI\EnemySkills\RollAttack.cpp">
+      <Filter>AI\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Object\Item.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\LaserEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\Gether.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\PlayerSkill\OverRay.cpp">
+      <Filter>PlayerSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\BinaryLoader.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\RenderTarget.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\PlayerSkill\RingBurst.cpp">
+      <Filter>PlayerSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\Radiation.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\Spherical.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\HitEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\UI\EnemyCounter.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\Effect\PowerUp.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="RangeMap\RangeMap.cpp">
+      <Filter>RangeMap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImaseLib\FPSTimer.h">
+      <Filter>ImaseLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBase\WindowBase.h">
+      <Filter>GameBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBase\GameBase.h">
+      <Filter>GameBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBase\Graphics.h">
+      <Filter>GameBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Mouse.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\MeshManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBase\Game.h">
+      <Filter>GameBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Camera\Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Camera\CameraManager.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Camera\CameraMode.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Scene\SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Scene\Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Scene\GameScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\Actor.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\GameObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Collision\Collision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Collision\Collision2D.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Collision\Split4Tree.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Collision\Terrain.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Collision\TerrainData.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Key.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\ObjectManager.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\Player.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Camera\TrackingMode.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Collision\CollisionManager.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\Enemy.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\AIState.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\Follow.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\UseSkill.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\Waiting.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\EnemySkills\Cleave.h">
+      <Filter>AI\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\EnemySkills\EnemySkill.h">
+      <Filter>AI\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\EnemySkills\HammerOfAnger.h">
+      <Filter>AI\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\UI\Canvas.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\UI\GUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\UI\StatusGauge.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle\DirectXHelper.h">
+      <Filter>Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle\ParticleGS.h">
+      <Filter>Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle\ParticleManager.h">
+      <Filter>Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle\ParticlePS.h">
+      <Filter>Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle\ParticleVS.h">
+      <Filter>Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\TaskManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\Explosion.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\Bomb.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\CircleEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\EnemySkills\BombSetting.h">
+      <Filter>AI\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\PlayerSkill\SkillController.h">
+      <Filter>PlayerSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\PlayerSkill\Skill.h">
+      <Filter>PlayerSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\PlayerSkill\Heel.h">
+      <Filter>PlayerSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\UI\SkillWindow.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\MessageUI.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\PlayerSkill\Swing.h">
+      <Filter>PlayerSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\Afterimage.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\HeelEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Billboard.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\ADX2Le.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Music\WorkUnit_0\CueSheet_0.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Scene\TitleScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Scene\BlackFade.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\Stage.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\EnemyCreator.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\EnemySkills\Rush.h">
+      <Filter>AI\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\AI\EnemySkills\RollAttack.h">
+      <Filter>AI\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Object\Item.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\LaserEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\Gether.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\PlayerSkill\OverRay.h">
+      <Filter>PlayerSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\BinaryLoader.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\RenderTarget.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\PlayerSkill\RingBurst.h">
+      <Filter>PlayerSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\Radiation.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\Spherical.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\HitEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\UI\EnemyCounter.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Effect\PowerUp.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\ConstantBuffer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="RangeMap\RangeMap.h">
+      <Filter>RangeMap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="myfile.spritefont">
+      <Filter>Font</Filter>
+    </None>
+    <None Include="DebugBase.props">
+      <Filter>property</Filter>
+    </None>
+    <None Include="ReleaseBase.props">
+      <Filter>property</Filter>
+    </None>
+    <None Include="Resources\dgsl\Parallaxmapping.DGSL">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Resources\dgsl\sky.dgsl">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Resources\dgsl\Floor.dgsl">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Resources\Models\Item.dgsl">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Resources\Models\Circle.dgsl">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Resources\Models\sphere.fbx">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\field03.FBX">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\sky.FBX">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\kentauros.FBX">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\Human.FBX">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\Circle.fbx">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\Item.fbx">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\Square.fbx">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\Bomb.fbx">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\field.FBX">
+      <Filter>リソース ファイル</Filter>
+    </MeshContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="RangeMap\RangePS.hlsl">
+      <Filter>RangeMap</Filter>
+    </FxCompile>
+    <FxCompile Include="RangeMap\RangeVS.hlsl">
+      <Filter>RangeMap</Filter>
+    </FxCompile>
+    <FxCompile Include="RangeMap\TexPS.hlsl">
+      <Filter>RangeMap</Filter>
+    </FxCompile>
+    <FxCompile Include="RangeMap\TexVS.hlsl">
+      <Filter>RangeMap</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{61A79074-357A-4A68-83B8-97FDDDF44F0C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ゲームフレームワーク</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\MeshContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Property\DebugBase.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Property\ReleaseBase.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\cri\pc\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\cri\pc\libs\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\cri\pc\include;C:\DirectXTK\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\cri\pc\libs\x86;C:\DirectXTK\Bin\Desktop_2013\Win32\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <MeshContentTask>
+      <ContentOutput>Resources\cModels\%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>Resources\cModels\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <MeshContentTask>
+      <ContentOutput>Resources\cModels\%(Filename).cmo</ContentOutput>
+    </MeshContentTask>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>Resources\cModels\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GameBase\Game.cpp" />
+    <ClCompile Include="GameBase\GameBase.cpp" />
+    <ClCompile Include="GameBase\Graphics.cpp" />
+    <ClCompile Include="GameBase\WindowBase.cpp" />
+    <ClCompile Include="GameSource\AI\AIState.cpp" />
+    <ClCompile Include="GameSource\AI\EnemySkills\BombSetting.cpp" />
+    <ClCompile Include="GameSource\AI\EnemySkills\Cleave.cpp" />
+    <ClCompile Include="GameSource\AI\EnemySkills\EnemySkill.cpp" />
+    <ClCompile Include="GameSource\AI\EnemySkills\HammerOfAnger.cpp" />
+    <ClCompile Include="GameSource\AI\EnemySkills\RollAttack.cpp" />
+    <ClCompile Include="GameSource\AI\EnemySkills\Rush.cpp" />
+    <ClCompile Include="GameSource\AI\Follow.cpp" />
+    <ClCompile Include="GameSource\AI\UseSkill.cpp" />
+    <ClCompile Include="GameSource\AI\Waiting.cpp" />
+    <ClCompile Include="GameSource\Camera\Camera.cpp" />
+    <ClCompile Include="GameSource\Camera\CameraManager.cpp" />
+    <ClCompile Include="GameSource\Camera\CameraMode.cpp" />
+    <ClCompile Include="GameSource\Camera\TrackingMode.cpp" />
+    <ClCompile Include="GameSource\Collision\Collision.cpp" />
+    <ClCompile Include="GameSource\Collision\Collision2D.cpp" />
+    <ClCompile Include="GameSource\Collision\CollisionManager.cpp" />
+    <ClCompile Include="GameSource\Collision\Split4Tree.cpp" />
+    <ClCompile Include="GameSource\Collision\Terrain.cpp" />
+    <ClCompile Include="GameSource\Collision\TerrainData.cpp" />
+    <ClCompile Include="GameSource\Effect\Afterimage.cpp" />
+    <ClCompile Include="GameSource\Effect\CircleEffect.cpp" />
+    <ClCompile Include="GameSource\Effect\Explosion.cpp" />
+    <ClCompile Include="GameSource\Effect\Gether.cpp" />
+    <ClCompile Include="GameSource\Effect\HeelEffect.cpp" />
+    <ClCompile Include="GameSource\Effect\HitEffect.cpp" />
+    <ClCompile Include="GameSource\Effect\LaserEffect.cpp" />
+    <ClCompile Include="GameSource\Effect\MessageUI.cpp" />
+    <ClCompile Include="GameSource\Effect\PowerUp.cpp" />
+    <ClCompile Include="GameSource\Effect\Radiation.cpp" />
+    <ClCompile Include="GameSource\Effect\Spherical.cpp" />
+    <ClCompile Include="GameSource\Object\Actor.cpp" />
+    <ClCompile Include="GameSource\Object\Bomb.cpp" />
+    <ClCompile Include="GameSource\Object\Enemy.cpp" />
+    <ClCompile Include="GameSource\Object\EnemyCreator.cpp" />
+    <ClCompile Include="GameSource\Object\GameObject.cpp" />
+    <ClCompile Include="GameSource\Object\Item.cpp" />
+    <ClCompile Include="GameSource\Object\ObjectManager.cpp" />
+    <ClCompile Include="GameSource\Object\Player.cpp" />
+    <ClCompile Include="GameSource\Object\Stage.cpp" />
+    <ClCompile Include="GameSource\PlayerSkill\Heel.cpp" />
+    <ClCompile Include="GameSource\PlayerSkill\OverRay.cpp" />
+    <ClCompile Include="GameSource\PlayerSkill\RingBurst.cpp" />
+    <ClCompile Include="GameSource\PlayerSkill\Skill.cpp" />
+    <ClCompile Include="GameSource\PlayerSkill\SkillController.cpp" />
+    <ClCompile Include="GameSource\PlayerSkill\Swing.cpp" />
+    <ClCompile Include="GameSource\Scene\BlackFade.cpp" />
+    <ClCompile Include="GameSource\Scene\GameScene.cpp" />
+    <ClCompile Include="GameSource\Scene\Scene.cpp" />
+    <ClCompile Include="GameSource\Scene\SceneManager.cpp" />
+    <ClCompile Include="GameSource\Scene\TitleScene.cpp" />
+    <ClCompile Include="GameSource\UI\Canvas.cpp" />
+    <ClCompile Include="GameSource\UI\EnemyCounter.cpp" />
+    <ClCompile Include="GameSource\UI\GUI.cpp" />
+    <ClCompile Include="GameSource\UI\SkillWindow.cpp" />
+    <ClCompile Include="GameSource\UI\StatusGauge.cpp" />
+    <ClCompile Include="ImaseLib\FPSTimer.cpp" />
+    <ClCompile Include="Particle\ParticleManager.cpp" />
+    <ClCompile Include="RangeMap\RangeMap.cpp" />
+    <ClCompile Include="Sound\ADX2Le.cpp" />
+    <ClCompile Include="Utility\Billboard.cpp" />
+    <ClCompile Include="Utility\BinaryLoader.cpp" />
+    <ClCompile Include="Utility\Key.cpp" />
+    <ClCompile Include="Utility\MeshManager.cpp" />
+    <ClCompile Include="Utility\Mouse.cpp" />
+    <ClCompile Include="Utility\RenderTarget.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameBase\Game.h" />
+    <ClInclude Include="GameBase\GameBase.h" />
+    <ClInclude Include="GameBase\Graphics.h" />
+    <ClInclude Include="GameBase\WindowBase.h" />
+    <ClInclude Include="GameSource\AI\AIState.h" />
+    <ClInclude Include="GameSource\AI\EnemySkills\BombSetting.h" />
+    <ClInclude Include="GameSource\AI\EnemySkills\Cleave.h" />
+    <ClInclude Include="GameSource\AI\EnemySkills\EnemySkill.h" />
+    <ClInclude Include="GameSource\AI\EnemySkills\HammerOfAnger.h" />
+    <ClInclude Include="GameSource\AI\EnemySkills\RollAttack.h" />
+    <ClInclude Include="GameSource\AI\EnemySkills\Rush.h" />
+    <ClInclude Include="GameSource\AI\Follow.h" />
+    <ClInclude Include="GameSource\AI\UseSkill.h" />
+    <ClInclude Include="GameSource\AI\Waiting.h" />
+    <ClInclude Include="GameSource\Camera\Camera.h" />
+    <ClInclude Include="GameSource\Camera\CameraManager.h" />
+    <ClInclude Include="GameSource\Camera\CameraMode.h" />
+    <ClInclude Include="GameSource\Camera\TrackingMode.h" />
+    <ClInclude Include="GameSource\Collision\Collision.h" />
+    <ClInclude Include="GameSource\Collision\Collision2D.h" />
+    <ClInclude Include="GameSource\Collision\CollisionManager.h" />
+    <ClInclude Include="GameSource\Collision\Split4Tree.h" />
+    <ClInclude Include="GameSource\Collision\Terrain.h" />
+    <ClInclude Include="GameSource\Collision\TerrainData.h" />
+    <ClInclude Include="GameSource\Effect\Afterimage.h" />
+    <ClInclude Include="GameSource\Effect\CircleEffect.h" />
+    <ClInclude Include="GameSource\Effect\Explosion.h" />
+    <ClInclude Include="GameSource\Effect\Gether.h" />
+    <ClInclude Include="GameSource\Effect\HeelEffect.h" />
+    <ClInclude Include="GameSource\Effect\HitEffect.h" />
+    <ClInclude Include="GameSource\Effect\LaserEffect.h" />
+    <ClInclude Include="GameSource\Effect\MessageUI.h" />
+    <ClInclude Include="GameSource\Effect\PowerUp.h" />
+    <ClInclude Include="GameSource\Effect\Radiation.h" />
+    <ClInclude Include="GameSource\Effect\Spherical.h" />
+    <ClInclude Include="GameSource\Object\Actor.h" />
+    <ClInclude Include="GameSource\Object\Bomb.h" />
+    <ClInclude Include="GameSource\Object\Enemy.h" />
+    <ClInclude Include="GameSource\Object\EnemyCreator.h" />
+    <ClInclude Include="GameSource\Object\GameObject.h" />
+    <ClInclude Include="GameSource\Object\Item.h" />
+    <ClInclude Include="GameSource\Object\ObjectManager.h" />
+    <ClInclude Include="GameSource\Object\Player.h" />
+    <ClInclude Include="GameSource\Object\Stage.h" />
+    <ClInclude Include="GameSource\PlayerSkill\Heel.h" />
+    <ClInclude Include="GameSource\PlayerSkill\OverRay.h" />
+    <ClInclude Include="GameSource\PlayerSkill\RingBurst.h" />
+    <ClInclude Include="GameSource\PlayerSkill\Skill.h" />
+    <ClInclude Include="GameSource\PlayerSkill\SkillController.h" />
+    <ClInclude Include="GameSource\PlayerSkill\Swing.h" />
+    <ClInclude Include="GameSource\Scene\BlackFade.h" />
+    <ClInclude Include="GameSource\Scene\GameScene.h" />
+    <ClInclude Include="GameSource\Scene\Scene.h" />
+    <ClInclude Include="GameSource\Scene\SceneManager.h" />
+    <ClInclude Include="GameSource\Scene\TitleScene.h" />
+    <ClInclude Include="GameSource\UI\Canvas.h" />
+    <ClInclude Include="GameSource\UI\EnemyCounter.h" />
+    <ClInclude Include="GameSource\UI\GUI.h" />
+    <ClInclude Include="GameSource\UI\SkillWindow.h" />
+    <ClInclude Include="GameSource\UI\StatusGauge.h" />
+    <ClInclude Include="ImaseLib\FPSTimer.h" />
+    <ClInclude Include="Particle\DirectXHelper.h" />
+    <ClInclude Include="Particle\ParticleGS.h" />
+    <ClInclude Include="Particle\ParticleManager.h" />
+    <ClInclude Include="Particle\ParticlePS.h" />
+    <ClInclude Include="Particle\ParticleVS.h" />
+    <ClInclude Include="RangeMap\RangeMap.h" />
+    <ClInclude Include="Resources\Music\WorkUnit_0\CueSheet_0.h" />
+    <ClInclude Include="Sound\ADX2Le.h" />
+    <ClInclude Include="Utility\Billboard.h" />
+    <ClInclude Include="Utility\BinaryLoader.h" />
+    <ClInclude Include="Utility\ConstantBuffer.h" />
+    <ClInclude Include="Utility\Key.h" />
+    <ClInclude Include="Utility\MeshManager.h" />
+    <ClInclude Include="Utility\Mouse.h" />
+    <ClInclude Include="Utility\RenderTarget.h" />
+    <ClInclude Include="Utility\TaskManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DebugBase.props" />
+    <None Include="myfile.spritefont" />
+    <None Include="ReleaseBase.props" />
+    <None Include="Resources\dgsl\Floor.dgsl" />
+    <None Include="Resources\dgsl\Parallaxmapping.DGSL" />
+    <None Include="Resources\dgsl\sky.dgsl" />
+    <None Include="Resources\Models\Circle.dgsl" />
+    <None Include="Resources\Models\Item.dgsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Resources\Models\Bomb.fbx" />
+    <MeshContentTask Include="Resources\Models\Circle.fbx" />
+    <MeshContentTask Include="Resources\Models\field.FBX" />
+    <MeshContentTask Include="Resources\Models\field03.FBX" />
+    <MeshContentTask Include="Resources\Models\Human.FBX" />
+    <MeshContentTask Include="Resources\Models\Item.fbx" />
+    <MeshContentTask Include="Resources\Models\kentauros.FBX" />
+    <MeshContentTask Include="Resources\Models\sky.FBX" />
+    <MeshContentTask Include="Resources\Models\sphere.fbx" />
+    <MeshContentTask Include="Resources\Models\Square.fbx" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="RangeMap\RangePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="RangeMap\RangeVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="RangeMap\TexPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="RangeMap\TexVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\MeshContentTask.targets" />
+  </ImportGroup>
+</Project>

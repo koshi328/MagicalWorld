@@ -1,0 +1,4 @@
+MAX,2
+TIME,800
+ENEMY,Resources/Data/Enemy/Status/Troll.txt
+ENEMY,Resources/Data/Enemy/Status/Goblin.txt
